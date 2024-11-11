@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Imagen</title>
+    <link rel="StyleSheet" href="css/style.css">
+</head>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+
+}
+
+.selector{
+    margin-right: 20px;
+}
+.background-box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+}
+</style>
+<body>
+    <div class="selector">
+        <h3>Seleccione una imagen de fondo</h3>
+        <select id="imagen" onchange="cambiarImagen()">
+            <option value="" selected>--selecciona 1 opcion</option>
+            <option value="imgs/A.jpg">Imagen 1</option>
+            <option value="imgs/img2.jpg">Imagen 2</option>
+            <option value="imgs/img3.avif">Imagen 3</option>
+        </select>
+    </div>
+    <div id="backGroundBox" class="background-box">
+    </div>
+</body>
+</html>
